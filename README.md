@@ -1,7 +1,8 @@
 Compute the largest eigenvalue and corresponding eigenvector of a large amount of 3x3 symmetric matrices being directly from a CSV file.
 A producer creates a queue of matrices to process, while consumer(s) calculate eigenvalue and eigenvector of the available matrices.
 
-Few benchmarks
+Few benchmarks: run on Intel(R) Xeon(R) CPU E5-2665 0 @ 2.40GHz, compiled with g++ (see Makefile)
+
 
 | # matrices | Serial (s) | Queue, 100 elems (s) | Queue, 1024 elems (s) |
 |:----------:|:----------:|:--------------:|:---------------:|
