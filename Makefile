@@ -2,9 +2,11 @@ CXX=g++
 
 EXEC=proc
 
-CXXFLAGS=-std=c++0x -O3 -xHost -openmp 
+#CXXFLAGS=-std=c++0x -O3 -xHost -openmp 
+CXXFLAGS=-std=c++11 -O3 -pthread -fopenmp -march=corei7-avx 
 
-INC=-I./inc -I/usr/global/intel-13/boost/1.54.0/include
+INC=-I./inc -I/usr/global/intel-13/boost/1.54.0
+#LIB=-L/usr/global/intel-13/boost/1.54.0/lib -lboost_thread -lboost_system
 LIB=
 
 
