@@ -15,6 +15,8 @@ Few benchmarks: run on Intel(R) Xeon(R) CPU E5-2665 0 @ 2.40GHz, compiled with g
 
 
 Most of time is spent reading the matrix file (in s and %age of serial run):
+
+
 | # matrices | while() read (s)| Boost spirit + mmap (s) | 
 |:----------:|:---------------:|:-----------------------:|
 | 10         | 1.38e-4  |       1.46e-4    |
